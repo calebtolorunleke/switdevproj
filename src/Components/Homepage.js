@@ -68,8 +68,11 @@ export const Homepage = () => {
             ocAhoy!
           </p>
         </div>
-        <div className="w-50">
-          <h3 className="w-75" style={{ fontSize: "2rem" }}>
+        <div className="w-50" style={{ fontFamily: "poppins" }}>
+          <h3
+            className="w-75"
+            style={{ fontSize: "2rem", fontFamily: "poppins" }}
+          >
             <b>
               The Best Health Care Services Is Near You, Book An Appointment
               Today!
@@ -90,6 +93,7 @@ export const Homepage = () => {
               height: "3rem",
               border: "1px none green",
               borderRadius: "5px",
+              fontFamily: "poppins",
               backgroundColor: "#55AEAD",
             }}
           >
@@ -115,7 +119,7 @@ export const Homepage = () => {
       </div>
       <br></br>
 
-      <div className="mt-1" style={{ margin: "5rem" }}>
+      <div className="mt-1" style={{ margin: "5rem", fontFamily: "poppins" }}>
         <h3>Top-searched specialities</h3> <br></br>
         <button
           className="bg-white"
@@ -216,7 +220,10 @@ export const Homepage = () => {
         </button>
       </div>
 
-      <div className="d-flex bg-white p-5" style={{ margin: "5rem" }}>
+      <div
+        className="d-flex bg-white p-5"
+        style={{ margin: "5rem", fontFamily: "poppins" }}
+      >
         <div className="w-100 me-5">
           <BsClipboardPulse
             className=""
@@ -405,7 +412,7 @@ export const Homepage = () => {
             </p>
           </div>
         </div>
-        <br></br> <br></br>
+        <br></br> <br></br> <br></br>
         <div className="bg-white p-5">
           <div>
             <img
@@ -452,10 +459,34 @@ export const Homepage = () => {
               height="100"
             ></img>
           </div>
-          <div className="float-end" style={{ marginTop: "-10rem" }}>
-            <p>DocAhoy! FOR HEALTH SYSTEMS</p>
-            <p>We are trusted by top health systems</p>
-            <button>Partner with DocAHoy</button>
+          <div
+            className="float-end w-25"
+            style={{
+              marginTop: "-11rem",
+              marginRight: "4rem",
+              fontFamily: "poppins",
+            }}
+          >
+            <p>
+              <b>DocAhoy! FOR HEALTH SYSTEMS</b>
+            </p>
+            <p>
+              <b>We are trusted by top health systems</b>
+            </p>
+            <button
+              className="w-75"
+              style={{
+                height: "3rem",
+                border: "none",
+                color: "white",
+                fontFamily: "poppins",
+                fontSize: "16px",
+                borderRadius: "5px",
+                backgroundColor: "#329D9C",
+              }}
+            >
+              Partner with DocAHoy
+            </button>
           </div>
         </div>
       </div>
