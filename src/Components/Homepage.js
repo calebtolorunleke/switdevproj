@@ -20,6 +20,9 @@ import Hygeia from "../pictures/Hygeia.png";
 import Avon from "../pictures/Avon.png";
 import Greenbay from "../pictures/Greenbay.png";
 import Lifeworth from "../pictures/Lifeworth.png";
+import Googleplay from "../pictures/Googleplay.png";
+import Apple from "../pictures/Apple.png";
+import Phone from "../pictures/Phone.png";
 import { BsClipboardPulse } from "react-icons/bs";
 import { MdOutlineSpatialAudio } from "react-icons/md";
 import { BsCalendarCheck } from "react-icons/bs";
@@ -131,7 +134,13 @@ export const Homepage = () => {
             marginRight: "5rem",
           }}
         >
-          <img src={Heart} alt="" height="50" width="50"></img>
+          <img
+            style={{ marginTop: "-2rem" }}
+            src={Heart}
+            alt=""
+            height="50"
+            width="50"
+          ></img>
         </button>
         <button
           className="bg-white"
@@ -489,6 +498,202 @@ export const Homepage = () => {
             </button>
           </div>
         </div>
+        <br></br> <br></br>
+        <div className="d-flex mt-5">
+          <div className="w-50" style={{ fontFamily: "poppins" }}>
+            <h1>Make your life Easier</h1> <br></br>
+            <p>
+              The mobile App is the quickest, easiest way to book and keep track
+              of your appointment.
+            </p>
+            <br></br>
+            <img src={Googleplay} alt="" height="50" width="200"></img>{" "}
+            <img src={Apple} alt="" height="50" width="200"></img>
+          </div>
+
+          <div className="w-50" style={{ marginLeft: "15rem" }}>
+            <img src={Phone} alt="" height="300" width="300"></img>
+          </div>
+        </div>
+        <br></br> <br></br>
+        <div className="" style={{ fontFamily: "poppins" }}>
+          <h3>Find doctors and Specialists by City</h3> <br></br>
+          <div className="d-flex">
+            <div className="w-25">
+              <ul
+                className=" "
+                style={{ listStyle: "none", marginLeft: "-2rem" }}
+              >
+                <li>Lagos</li>
+                <hr></hr>
+                <li>Ibadan</li>
+                <hr></hr>
+                <li>Uyo</li>
+                <hr></hr>
+              </ul>
+            </div>
+            <div className="w-25">
+              <ul className=" " style={{ listStyle: "none" }}>
+                <li>Abuja</li>
+                <hr></hr>
+                <li>Kano</li>
+                <hr></hr>
+                <li>Jos</li>
+                <hr></hr>
+              </ul>
+            </div>
+            <div className="w-25">
+              <ul className=" " style={{ listStyle: "none" }}>
+                <li>Port Harcourt</li>
+                <hr></hr>
+                <li>Enugu</li>
+                <hr></hr>
+                <li>Kaduna</li>
+                <hr></hr>
+              </ul>
+            </div>
+            <div className="w-25">
+              <ul className=" " style={{ listStyle: "none" }}>
+                <li>Calabar</li>
+                <hr></hr>
+                <li>Owerri</li>
+                <hr></hr>
+                <li>Akure</li>
+                <hr></hr>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br></br> <br></br>
+        <footer>
+          <hr></hr>
+
+          <div
+            className="d-flex"
+            style={{
+              listStyle: "none",
+              lineHeight: "2.5rem",
+              fontFamily: "poppins",
+            }}
+          >
+            <div className="w-25">
+              <li className="" style={{ color: "#236E6D", fontSize: "1.2rem" }}>
+                DocAhoy!
+              </li>
+              <br></br>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="OurServices"
+                >
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="AboutUs"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="OurTeam"
+                >
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="Careers"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-dark"
+                  style={{ textDecoration: "none" }}
+                  href="Make an appointment"
+                >
+                  Make An Appointment
+                </a>
+              </li>
+            </div>
+            <div className="w-25">
+              <li className="" style={{ color: "#236E6D", fontSize: "1.2rem" }}>
+                Hmo Insurance
+              </li>
+              <br></br>
+              <li>Axa mansard</li>
+              <li>Reliance</li>
+              <li>Nhis</li>
+              <li>Hygeia</li>
+              <li>Avon</li>
+              <li>Metro Health</li>
+              <li>Aiico</li>
+              <li>IHMS</li>
+            </div>
+            <div className="w-25">
+              <li className="" style={{ color: "#236E6D", fontSize: "1.2rem" }}>
+                Top Specialities
+              </li>
+              <br></br>
+              <li>Primary Health Care</li>
+              <li>Urgent Care</li>
+              <li>Dentist</li>
+              <li>Cardiologist</li>
+              <li>Ear, Nose & Throat</li>
+              <li>Neurologist</li>
+              <li>Paediatrician</li>
+              <li>Urologist</li>
+              <li>Orthopedic Surgeon</li>
+            </div>
+            <div className="w-25">
+              <li className="" style={{ color: "#236E6D", fontSize: "1.2rem" }}>
+                Location
+              </li>
+              <br></br>
+              <li>Lagos</li>
+              <li>Port Harcourt</li>
+              <li>Ondo</li>
+              <li>Calabar</li>
+              <li>Enugu</li>
+              <li>Kaduna</li>
+              <li>Jos</li>
+              <li>Owerri</li>
+              <li>Ibadan</li>
+            </div>
+            <div className="w-25" style={{ marginLeft: "-5rem" }}>
+              <li className="" style={{ color: "#236E6D", fontSize: "1.1rem" }}>
+                Are you a top doctor or health service?
+              </li>
+              <br></br>
+              <li>List Your Practice On DocAhoy</li>
+              <li>Learn About DocAhoy For Health Systems</li>
+              <li>Become A DocAhoy partner</li>
+              <p>Get the DocAhoy App</p>
+              <img src={Googleplay} alt="" height="50" width="200"></img>{" "}
+              <img src={Apple} alt="" height="50" width="200"></img>
+            </div>
+          </div>
+        </footer>
       </div>
     </Container>
   );
