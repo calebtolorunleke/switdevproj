@@ -5,7 +5,7 @@ import { FcCheckmark } from "react-icons/fc";
 
 const Success = () => {
   return (
-    <Container>
+    <Container style={{ height: "100vh" }}>
       <div className="d-flex">
         <img src={Girl} alt="" width="700px" />
         <img src={Girl} alt="" width="700px" />

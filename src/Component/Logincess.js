@@ -5,15 +5,20 @@ import { TfiFacebook } from "react-icons/tfi";
 import { MdCancel } from "react-icons/md";
 
 const Logincess = () => {
-  const handleClick = (onDelete) => {
-    onDelete();
-  };
+  /*
+  function handleClick() {
+    Document.getElementbyid("you").style.display = "none";
+  }
+  */
   return (
     <div>
-      <Container className="mt-5 p-5">
-        <div className="mb-5 text-white d-flex" style={{ marginLeft: "450px" }}>
+      <Container className="mt-5 p-5" style={{ height: "100vh" }}>
+        <div
+          className="mb-5  alert alert-dismissible text-white d-flex"
+          id="you"
+          style={{ marginLeft: "450px" }}
+        >
           <button
-            onClick={handleClick}
             className="delete-button text-white  "
             style={{
               backgroundColor: "#55AEAD",
@@ -27,7 +32,7 @@ const Logincess = () => {
               <p className="fs-4" style={{ marginRight: "220PX" }}>
                 Success
               </p>
-              <MdCancel size={25} />
+              <MdCancel size={25} className="close" data-dismiss="alert" />
             </div>
             <p style={{ marginTop: "-15px" }}>
               Your account has been sucessfully created

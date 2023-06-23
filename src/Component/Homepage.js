@@ -18,7 +18,7 @@ import Apple from "../Pictures/Apple.png";
 
 const Homepage = () => {
   return (
-    <Container>
+    <Container style={{ height: "100vh" }}>
       <div>
         <h1 style={{ marginTop: "100px" }}>
           <strong>Welcome!!!</strong>

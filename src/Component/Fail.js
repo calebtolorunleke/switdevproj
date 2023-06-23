@@ -5,7 +5,7 @@ import Cancel from "../Pictures/Cancel.png";
 
 const Fail = () => {
   return (
-    <Container>
+    <Container style={{ height: "100vh" }}>
       <div>
         <div>
           <img src={Oops} alt="" width="600px" />
