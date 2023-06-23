@@ -14,7 +14,6 @@ export function Navbar() {
         <a href="SignUp">SignUp</a>
         <a href="Login">
           <button
-            className=""
             style={{
               border: "1px solid black",
               backgroundColor: "aliceblue",

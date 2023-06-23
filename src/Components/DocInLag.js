@@ -3,60 +3,42 @@ import "@fontsource/poppins";
 import Dr1 from "../pictures/Dr1.png";
 import Dr2 from "../pictures/Dr2.png";
 import Dr3 from "../pictures/Dr3.png";
-import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 
-function DocInLag() {
-  document.body.style.backgroundColor = "aliceblue";
+const DocInLag = () => {
+  document.body.style.backgroundColor = "#D9D9D9";
 
   return (
     <Container>
-      <div className="" style={{ margin: "5rem", fontFamily: "poppins" }}>
-        <div>
-          <p
-            className=""
-            style={{
-              border: "1px solid #1F605F",
-              position: "absolute",
-              width: "87px",
-              height: "70px",
-              marginLeft: "-1rem",
-              padding: "5px",
-              color: "#1F605F",
-              textAlign: "center",
-              borderRadius: "15rem",
-              alignItems: "center",
-              fontSize: "40px",
-              fontFamily: "poppins",
-              fontWeight: "600",
-            }}
-          >
-            DA!
-          </p>
-
-          <p
-            className=""
-            style={{
-              fontFamily: "poppins",
-              fontSize: "32px",
-              lineHeight: "70px",
-              marginLeft: "72px",
-              fontWeight: "600",
-            }}
-          >
-            <span className="" style={{ color: "#1F605F" }}>
-              D
+      <div
+        className="container"
+        style={{ margin: "5rem", fontFamily: "poppins" }}
+      >
+        <div className="pt-3 mb-5" style={{ margin: "-3rem" }}>
+          <h4 style={{ position: "absolute", left: "10rem" }}>
+            <b
+              style={{
+                border: "1px solid #1F605F",
+                fontSize: "1.5rem",
+                borderRadius: "50%",
+                color: "#1F605F",
+                padding: "0.3rem 0.5rem",
+              }}
+            >
+              DA!
+            </b>
+            <span>
+              <strong style={{ color: "#1F605F" }}>D</strong>
             </span>
             ocAhoy!
-          </p>
+          </h4>
         </div>
         <div
           style={{
-            height: "4.5rem",
+            height: "5rem",
             width: "100%",
             padding: "1.5rem",
-            backgroundSize: "cover",
-            marginTop: "1rem",
-            fontFamily: "poppins",
+            marginTop: "5rem",
             backgroundImage: `url(${require("../pictures/Background.png")})`,
           }}
         >
@@ -64,18 +46,21 @@ function DocInLag() {
         </div>
         <br></br>
         <br></br>
-        <div className="d-flex p-5" style={{ backgroundColor: "#ABD7D6" }}>
+        <div
+          className="d-flex p-5"
+          style={{ marginRight: "7rem", backgroundColor: "#ABD7D6" }}
+        >
           <div className="w-25">
             <img src={Dr1} alt=""></img>
           </div>
           <div className="w-50 p-3" style={{ marginLeft: "5rem" }}>
-            <h3>Dr. Adejoke Omodele </h3>
+            <h4>Dr. Adejoke Omodele </h4>
             <p className="text-white">General Physician</p>
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
             (Overall Rating From 5 Visitors)
             <p>
               General practitioner specialized in paediatric general practice
@@ -86,18 +71,28 @@ function DocInLag() {
             <p className="text-white">Fees: 15,000 NGN</p>
           </div>
           <div>
-            <botton
-              className="p-2"
-              style={{
-                backgroundColor: "#EBF5F5",
-                border: "none",
-                color: "black",
-                borderRadius: "7px",
-              }}
-            >
-              Available Time
-            </botton>
+            <div>
+              <select
+                className="p-2"
+                style={{
+                  backgroundColor: "#EBF5F5",
+                  border: "1px solid black",
+                  color: "black",
+                  borderRadius: "7px",
+                }}
+              >
+                <option value="available time">Available Time</option>
+                <option value="8am-9am">8am-9am</option>
+                <option value="9am-10am">9am-10am</option>
+                <option value="10am-11am">10am-11am</option>
+                <option value="11am-12pm">11am-12pm</option>
+                <option value="1pm-2pm">1pm-2pm</option>
+                <option value="2pm-3pm">2pm-3pm</option>
+              </select>
+            </div>
+
             <br></br>
+
             <button
               style={{
                 backgroundColor: "#55AEAD",
@@ -114,18 +109,21 @@ function DocInLag() {
           </div>
         </div>
         <br></br>
-        <div className="d-flex p-5" style={{ backgroundColor: "#ABD7D6" }}>
+        <div
+          className="d-flex p-5"
+          style={{ marginRight: "7rem", backgroundColor: "#ABD7D6" }}
+        >
           <div className="w-25">
             <img src={Dr2} alt=""></img>
           </div>
           <div className="w-50 p-4" style={{ marginLeft: "5rem" }}>
-            <h3>Dr. Laraba Rhodes </h3>
+            <h4>Dr. Laraba Rhodes </h4>
             <p className="text-white">Obstetrics and gynecology</p>
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
             (Overall Rating From 5 Visitors)
             <p>Reproductive Endocrinology and Minimal access surgeries.</p>
             <p>Ikeja</p>
@@ -133,18 +131,27 @@ function DocInLag() {
             <p className="text-white">Fees: 15,000 NGN</p>
           </div>
           <div>
-            <botton
-              className="p-2"
-              style={{
-                backgroundColor: "#EBF5F5",
-                border: "none",
-                color: "black",
-                borderRadius: "7px",
-              }}
-            >
-              Available Time
-            </botton>
+            <div>
+              <select
+                className="p-2"
+                style={{
+                  backgroundColor: "#EBF5F5",
+                  border: "1px solid black",
+                  color: "black",
+                  borderRadius: "7px",
+                }}
+              >
+                <option value="available time">Available Time</option>
+                <option value="8am-9am">8am-9am</option>
+                <option value="9am-10am">9am-10am</option>
+                <option value="10am-11am">10am-11am</option>
+                <option value="11am-12pm">11am-12pm</option>
+                <option value="1pm-2pm">1pm-2pm</option>
+                <option value="2pm-3pm">2pm-3pm</option>
+              </select>
+            </div>
             <br></br>
+
             <button
               style={{
                 backgroundColor: "#55AEAD",
@@ -161,20 +168,21 @@ function DocInLag() {
           </div>
         </div>
         <br></br>
-        <div className="d-flex p-5" style={{ backgroundColor: "#ABD7D6" }}>
+        <div
+          className="d-flex p-5"
+          style={{ marginRight: "7rem", backgroundColor: "#ABD7D6" }}
+        >
           <div className="w-25">
             <img src={Dr3} alt=""></img>
           </div>
           <div className="w-50 p-3" style={{ marginLeft: "5rem" }}>
-            <h3>Dr. Seun Awoseye </h3>
+            <h4>Dr. Seun Awoseye </h4>
             <p className="text-white">Psychiatrist</p>
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
-            <AiOutlineStar
-              style={{ color: "#55AEAD", fontSize: "1.5rem" }}
-            />{" "}
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />
+            <AiFillStar style={{ color: "#55AEAD", fontSize: "1.5rem" }} />{" "}
             (Overall Rating From 5 Visitors)
             <p>Senior consultant in psychiatry</p>
             <p>Lekki</p>
@@ -182,18 +190,27 @@ function DocInLag() {
             <p className="text-white">Fees: 15,000 NGN</p>
           </div>
           <div>
-            <botton
-              className="p-2"
-              style={{
-                backgroundColor: "#EBF5F5",
-                border: "none",
-                color: "black",
-                borderRadius: "7px",
-              }}
-            >
-              Available Time
-            </botton>
+            <div>
+              <select
+                className="p-2"
+                style={{
+                  backgroundColor: "#EBF5F5",
+                  border: "1px solid black",
+                  color: "black",
+                  borderRadius: "7px",
+                }}
+              >
+                <option value="available time">Available Time</option>
+                <option value="8am-9am">8am-9am</option>
+                <option value="9am-10am">9am-10am</option>
+                <option value="10am-11am">10am-11am</option>
+                <option value="11am-12pm">11am-12pm</option>
+                <option value="1pm-2pm">1pm-2pm</option>
+                <option value="2pm-3pm">2pm-3pm</option>
+              </select>
+            </div>
             <br></br>
+
             <button
               style={{
                 backgroundColor: "#55AEAD",
@@ -211,7 +228,7 @@ function DocInLag() {
         </div>
         <br></br> <br></br>
         <footer>
-          <hr></hr>
+          <hr style={{ marginRight: "5rem" }}></hr>
 
           <div
             className="d-flex"
@@ -219,6 +236,7 @@ function DocInLag() {
               listStyle: "none",
               lineHeight: "2.5rem",
               fontFamily: "poppins",
+              marginRight: "5rem",
             }}
           >
             <div className="w-25">
@@ -275,7 +293,7 @@ function DocInLag() {
                 <a
                   className="text-dark"
                   style={{ textDecoration: "none" }}
-                  href="Make an appointment"
+                  href="Login"
                 >
                   Make An Appointment
                 </a>
@@ -315,7 +333,14 @@ function DocInLag() {
                 Location
               </li>
               <br></br>
-              <li>Lagos</li>
+              <li>
+                <a
+                  style={{ textDecoration: "none", color: "black" }}
+                  href="Login"
+                >
+                  Lagos
+                </a>
+              </li>
               <li>Port Harcourt</li>
               <li>Ondo</li>
               <li>Calabar</li>
@@ -339,6 +364,6 @@ function DocInLag() {
       </div>
     </Container>
   );
-}
+};
 
 export default DocInLag;
