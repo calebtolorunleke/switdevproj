@@ -13,7 +13,17 @@ import BrowseSpacialities from "./Component/BrowseSpacialities";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="Login" element={<DocInLag />} />
+        <Route path="OurServices" element={<SuccessBooking />} />
+        <Route path="SignUp" element={<Payment />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 
