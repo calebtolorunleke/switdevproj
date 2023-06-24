@@ -1,0 +1,13 @@
+/* Styling for PMABody Backgroung image */
+.bodydiv {
+  background-image: url("/src/Images/Appo.png");
+  background-position: center;
+  background-size: cover;
+  /* padding: 5rem; */
+  width: 100vh;
+  height: 80vh;
+  /* padding-top: 3vh; */
+  margin-left: 10rem;
+  margin-top: 8rem;
+  position: absolute;
+}

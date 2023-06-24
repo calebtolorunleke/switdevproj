@@ -1,0 +1,10 @@
+/* Styling for GPHeader background image  */
+.bgimg2 {
+  background-image: url("/src/Images/image.png");
+  background-position: center;
+  background-size: cover;
+  width: 48rem;
+  height: 4.5rem;
+  margin-top: 3rem;
+  margin-left: 7rem;
+}
